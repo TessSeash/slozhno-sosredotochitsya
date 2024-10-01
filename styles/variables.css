@@ -5,9 +5,11 @@
 :root {
   --color-headline: #ffc2e6;
   --color-primary: #ff8dcb;
+  --color-auto-primary: #353430;
   --color-secondary: #353430;
   --background-image: url("../images/cover-image-light.png");
   --color-headline-shadow: #ff0070;
+  --display-rec: none;
 }
 
 @media (width < 1024px) {

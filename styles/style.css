@@ -8,6 +8,7 @@
   background-position: center;
   max-width: 1024px;
   min-height: 668px;
+  background-image: var(--background-image);
 }
 
 .header {
@@ -19,6 +20,7 @@
 }
 
 .decoration-rec {
+  display: var(--display-rec);
   position: absolute;
   right: 0;
   top: 0;
@@ -34,6 +36,8 @@
   font-size: 18px;
   top: 21px;
   right: 48px;
+  display: block;
+  color: var(--color-primary);
 }
 
 .decoration-rec::after {
@@ -45,6 +49,10 @@
   height: 12px;
   right: 28px;
   top: 26px;
+  display: block;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  filter: drop-shadow(0 0 1px var(--color-primary)) blur(2px);
 }
 
 .header__theme-menu {
@@ -67,23 +75,27 @@
   font-size: 18px;
   text-transform: lowercase;
   text-align: center;
-  vertical-align: center;
   padding: 0;
   width: 70px;
   outline: none;
+  color: var(--color-auto-primary);
 }
+
 
 .header__theme-menu-button:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-color: var(--color-auto-primary);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: 1px solid var(--color-auto-primary);
 }
 
 .header__theme-menu-button:focus-visible {
   border: 1px solid;
+  border-color: var(--color-auto-primary);
 }
 
 .slogan {
@@ -91,6 +103,12 @@
   font-style: normal;
   text-transform: lowercase;
   line-height: 82.5%;
+  color: var(--color-headline);
+  text-shadow: 4px 4px 0px var(--color-headline-shadow);
+}
+
+footer .slogan {
+  text-shadow: 2px 2px 0px var(--color-headline-shadow);
 }
 
 .slogan h1 {
@@ -107,6 +125,8 @@
   font-weight: 700;
   margin-right: 20px;
   margin-bottom: 20px;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .decorated-zone::before {
@@ -119,6 +139,7 @@
   top: 20px;
   width: 25px;
   height: 25px;
+  border-color: var(--color-auto-primary);
 }
 
 .decorated-zone::after {
@@ -131,6 +152,7 @@
   bottom: 20px;
   width: 25px;
   height: 25px;
+  border-color: var(--color-auto-primary);
 }
 
 main section {
@@ -183,17 +205,21 @@ section li:not(:last-child) {
 main h2 {
   font-size: inherit;
   font-weight: Bold;
+  color: var(--color-auto-primary);
 }
 
 main h3 {
   font-size: inherit;
   font-weight: Bold;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 main p {
   margin-top: 10px;
   font-size: inherit;
   font-weight: normal;
+  color: var(--color-description);
 }
 
 .pictures-container {
@@ -250,10 +276,12 @@ footer h2 {
 
 a {
   text-decoration: none;
+  text-shadow: 2px 2px 0 var(--color-primary);
+  border: 1px solid transparent;
 }
 
 a:hover {
-  border-bottom: 1px solid;
+  border-bottom-color: var(--color-description);
 }
 
 a:focus-visible {
