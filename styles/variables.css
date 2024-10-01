@@ -91,7 +91,8 @@
 
   body .header__theme-menu-list {
     margin-right: 10px;
-    margin-top: 5px;
+    margin-bottom: 12px;
+    gap: 13px;
   }
   body .header_description {
     width: 95%;
@@ -104,6 +105,7 @@
   body .slogan h1 {
     margin-left: 10px;
     line-height: 82.5%;
+    font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   }
 
   body footer h2 {
