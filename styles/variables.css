@@ -14,6 +14,7 @@
   body .content-consentration-decline ul {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 
   body .slogan h1 {
@@ -38,10 +39,6 @@
 
   body .content-consentration-decline div {
     grid-template-columns: 1fr 3fr;
-  }
-
-  body .content-consentration-decline ul {
-    gap: 0;
   }
 
   body .header__theme-menu-list {
