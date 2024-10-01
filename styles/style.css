@@ -2,4 +2,256 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1024px;
+  min-height: 668px;
+}
+
+.header {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+}
+
+.decoration-rec {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.decoration-rec::before {
+  display: none;
+  position: absolute;
+  content: "REC";
+  text-transform: capitalize;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-size: 18px;
+  top: 21px;
+  right: 48px;
+}
+
+.decoration-rec::after {
+  display: none;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  right: 28px;
+  top: 26px;
+}
+
+.header__theme-menu {
+  position: relative;
+}
+
+.header__theme-menu-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background: transparent;
+  border: transparent;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-size: 18px;
+  text-transform: lowercase;
+  text-align: center;
+  width: 70px;
+  padding-top: 0;
+  outline: none;
+}
+
+.header__theme-menu-button:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border: 1px solid;
+}
+
+.slogan {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  text-transform: lowercase;
+  line-height: 82.5%;
+}
+
+.slogan h1 {
+  line-height: 82.5%;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+}
+
+.header_description {
+  justify-self: end;
+  align-self: center;
+  width: 48%;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  border: 1px solid;
+  border-left: none;
+  border-bottom: none;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  border: 1px solid;
+  border-right: none;
+  border-top: none;
+  left: 20px;
+  bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+main section {
+  margin: 0 20px 80px 20px;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  column-gap: 10px;
+}
+
+main section:last-child {
+  margin-bottom: 60px;
+}
+
+.content-consentration-introduction {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.content-consentration-decline div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.content-consentration-decline {
+  display: grid;
+  grid-auto-columns: 1fr 2fr;
+  row-gap: 20px;
+}
+
+.content-consentration-decline ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.content-consentration-methods {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+section li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: inherit;
+  font-weight: Bold;
+}
+
+main h3 {
+  font-size: inherit;
+  font-weight: Bold;
+}
+
+main p {
+  margin-top: 10px;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.pictures-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one one two"
+    "three four two"
+    "three five five";
+}
+
+.pictures-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sunset {
+  grid-area: one;
+}
+
+.ice-cream {
+  grid-area: two;
+}
+
+.tape {
+  grid-area: three;
+}
+
+.books {
+  grid-area: four;
+}
+
+.street {
+  grid-area: five;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+a:focus-visible {
+  outline: none;
+  border: 1px solid;
 }
