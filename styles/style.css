@@ -27,7 +27,6 @@
 }
 
 .decoration-rec::before {
-  display: none;
   position: absolute;
   content: "REC";
   text-transform: capitalize;
@@ -41,7 +40,6 @@
 }
 
 .decoration-rec::after {
-  display: none;
   position: absolute;
   content: "";
   border-radius: 50%;
