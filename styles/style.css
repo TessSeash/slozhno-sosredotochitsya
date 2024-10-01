@@ -9,6 +9,7 @@
   max-width: 1024px;
   min-height: 668px;
   background-image: var(--background-image);
+  background-color: var(--bg-color);
 }
 
 .header {

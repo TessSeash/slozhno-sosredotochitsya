@@ -12,6 +12,7 @@
   --color-description: #f1b2ce;
   --display-rec: block;
   --color-auto-primary: #ff0070;
+  --bg-color: #010028;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +25,7 @@
     --color-description: #f1b2ce;
     --display-rec: block;
     --color-auto-primary: #ff0070;
+    --bg-color: #010028;
   }
 }
 

@@ -10,6 +10,7 @@
   --background-image: url("../images/cover-image-light.png");
   --color-headline-shadow: #ff0070;
   --color-description: #353430;
+  --bg-color: #FFF1F8;
 }
 
 .page.theme_light {

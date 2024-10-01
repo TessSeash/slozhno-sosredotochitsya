@@ -10,6 +10,7 @@
   --background-image: url("../images/cover-image-light.png");
   --color-headline-shadow: #ff0070;
   --display-rec: none;
+  --bg-color: #FFF1F8;
 }
 
 @media (width < 1024px) {
