@@ -13,7 +13,7 @@
 h2 {
   font-size: inherit;
   font-weight: Bold;
-  color: var(--color-auto-primary);
+  color: rgb(var(--color-auto-primary-rgb));
 }
 
 h3 {
@@ -101,21 +101,21 @@ p {
   padding: 0;
   inline-size: 70px;
   outline: none;
-  color: var(--color-auto-primary);
+  color: rgb(var(--color-auto-primary-rgb));
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--color-auto-primary);
+  border: 1px solid rgba(var(--color-auto-primary-rgb), 70%);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  outline: 1px solid var(--color-auto-primary);
+  outline: 1px solid rgb(var(--color-auto-primary-rgb));
   border: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--color-auto-primary);
+  border-bottom: 1px solid rgb(var(--color-auto-primary-rgb));
 }
 
 .header__theme-menu-button:focus {
@@ -165,7 +165,7 @@ p {
   top: 20px;
   width: 25px;
   height: 25px;
-  border-color: var(--color-auto-primary);
+  border-color: rgb(var(--color-auto-primary-rgb));
 }
 
 .decorated-zone::after {
@@ -178,7 +178,7 @@ p {
   bottom: 20px;
   width: 25px;
   height: 25px;
-  border-color: var(--color-auto-primary);
+  border-color: rgb(var(--color-auto-primary-rgb));
 }
 
 main {
